@@ -2,46 +2,50 @@
 <html lang="en">
 
 <head>
+    <title>time-tracker</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>time-tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>time-tracker</h1>
+        <h1>umnaya mamochka</h1>
     </header>
-
     <form id="task-form">
-        <input type="text" name="task-input" id="task-input" placeholder="What are you doing?">
-        <input type="text" id="task-submit" value="Add Task">
+        <input type="text" name="task-input" id="task-input" placeholder="add your tasks, sister)" />
+        <input type="submit" id="task-submit" value="Add Task" />
     </form>
-
-    <section class="task-list">
-        <h2>Tasks</h2>
-        <div class="tasks">
-            <div id="task">
-                <div class="content">
-                    <input type="text" class="text" value="A new task" readonly>
-                </div>
-                <div class="counter">
-                    <div class="time">00:00:00</div>
-                    <div class="controls">
-                        <button id="start">Start</button>
-                        <button id="stop">Stop</button>
-                        <button id="reset">Reset</button>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button id="edit">Edit</button>
-                    <button id="delete">Delete</button>
-                </div>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks">
+                <!--
+                        <div class="task">
+                            <div class="content">
+                                <input type="text" class="text" value="A new task" readonly />
+                            </div>
+                            <div class="counter">
+                                <div class="time">
+                                    00:00:00
+                                </div>
+                                <div class="controls">
+                                    <button class="start">Start</button>
+                                    <button class="stop">Stop</button>
+                                    <button class="reset">Reset</button>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Edit Task</button>
+                                <button class="delete">Delete Task</button>
+                                <button class="download">Download as CSV</button>
+                            </div>
+                        </div>
+                    -->
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <script src="app.js"></script>
 </body>
