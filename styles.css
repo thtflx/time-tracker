@@ -255,23 +255,29 @@ a {
     text-decoration: none;
 }
 
-.contnr {
-    position: relative;
-    right: -250px;
-    display: flex;
-    justify-content: center;
-    /* padding-left: auto;
-    padding-right: auto; */
-    width: 300px;
-    /* margin-left: -100px;
-    margin-right: -100px; */
-}
-
 .line {
-    /* position: relative; */
-    top: -19px;
+    /* display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
     border-radius: 50px;
     transform: rotate(174deg);
-    /* background-color: red; */
-    border: 3px solid rgba(0, 0, 0, 0.626);
+    border: 3px solid rgba(0, 0, 0, 0.626); */
+    margin-left: 300px;
+    width: 200px;
+    /* border: 3px solid rgba(0, 0, 0, 0.626); */
+    margin-top: -2px;
+}
+
+.frog {
+    /* position: relative;
+    bottom: -20px; */
+    margin-bottom: -15px;
+    transform: rotate(360deg);
+}
+
+#title {
+    margin-top: -5px;
+    border-radius: 60px;
+    box-shadow: 0px -4px 3px rgba(0, 188, 31, 0.317);
+    /* border-top: 3px solid rgba(0, 0, 0, 0.626); */
 }
