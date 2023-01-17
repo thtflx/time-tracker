@@ -123,7 +123,7 @@ window.addEventListener('load', () => {
             // AUDIO
             // const audio = new Audio('audio/banana.mp3');
 
-            if (secs > 5) {
+            if (secs > 10) {
                 audio.play();
             }
         }
@@ -137,6 +137,10 @@ window.addEventListener('load', () => {
 
             // audio
             // audio.play();
+            if (secs > 3) {
+                audio.play();
+            }
+
         }
 
         function stop() {
@@ -145,13 +149,14 @@ window.addEventListener('load', () => {
 
             // audio
             audio.pause();
-
         }
 
         function reset() {
             stop();
             seconds = 0;
             time_el.innerText = "00:00:00"
+            audio.pause();
+
         }
 
         //edit
@@ -165,12 +170,16 @@ window.addEventListener('load', () => {
                 input_el.setAttribute('readonly', 'readonly');
                 edit_btn.innerText = "Edit Task";
             }
+            audio.pause();
+
         })
 
         //delete
 
         delete_btn.addEventListener('click', () => {
             list_el.removeChild(task_el);
-        })
+            // audio.pause();
+        });
+
     })
 })
