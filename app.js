@@ -96,7 +96,9 @@ window.addEventListener('load', () => {
 
 
         // AUDIO
-        const audio = new Audio('audio/banana.mp3');
+        // const audio = new Audio('audio/banana.mp3');
+        const audio = new Audio('audio/Times Up  - Sound Effect.mp3');
+
 
 
 
