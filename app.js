@@ -125,7 +125,15 @@ window.addEventListener('load', () => {
             // AUDIO
             // const audio = new Audio('audio/banana.mp3');
 
-            if (secs > 2) {
+            // if (secs > 10) {
+            //     audio.play();
+            // }
+
+            // if (mins >= 5) {
+            //     audio.play();
+            // }
+
+            if (hrs >= 2) {
                 audio.play();
             }
         }
@@ -176,12 +184,9 @@ window.addEventListener('load', () => {
 
         })
 
-        //delete
 
         delete_btn.addEventListener('click', () => {
             list_el.removeChild(task_el);
-            // audio.pause();
         });
-
     })
 })
