@@ -94,6 +94,12 @@ window.addEventListener('load', () => {
         stop_btn.addEventListener('click', stop);
         reset_btn.addEventListener('click', reset);
 
+
+        // AUDIO
+        const audio = new Audio('audio/banana.mp3');
+
+
+
         //counter functions
         function timer() {
             seconds++;
@@ -102,11 +108,24 @@ window.addEventListener('load', () => {
             let mins = Math.floor((seconds - (hrs * 3600)) / 60);
             let secs = seconds % 60;
 
-            if (secs < 10) secs = '0' + secs;
-            if (mins < 10) mins = '0' + mins;
-            if (hrs < 10) hrs = '0' + hrs;
+            if (secs < 10) {
+                secs = '0' + secs;
+            }
+            if (mins < 10) {
+                mins = '0' + mins;
+            }
+            if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
 
             time_el.innerText = `${hrs}:${mins}:${secs}`;
+
+            // AUDIO
+            // const audio = new Audio('audio/banana.mp3');
+
+            if (secs > 5) {
+                audio.play();
+            }
         }
 
         function start() {
@@ -115,11 +134,18 @@ window.addEventListener('load', () => {
             }
 
             interval = setInterval(timer, 1000);
+
+            // audio
+            // audio.play();
         }
 
         function stop() {
             clearInterval(interval);
             interval = null;
+
+            // audio
+            audio.pause();
+
         }
 
         function reset() {
