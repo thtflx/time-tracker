@@ -97,7 +97,7 @@ window.addEventListener('load', () => {
 
         // AUDIO
         // const audio = new Audio('audio/banana.mp3');
-        const audio = new Audio('audio/mrbean.mp3');
+        const audio = new Audio('audio/vibr.mp3');
 
 
 
