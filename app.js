@@ -97,7 +97,7 @@ window.addEventListener('load', () => {
 
         // AUDIO
         // const audio = new Audio('audio/banana.mp3');
-        const audio = new Audio('audio/Times Up  - Sound Effect.mp3');
+        const audio = new Audio('audio/mrbean.mp3');
 
 
 
@@ -125,7 +125,7 @@ window.addEventListener('load', () => {
             // AUDIO
             // const audio = new Audio('audio/banana.mp3');
 
-            if (secs > 10) {
+            if (secs > 2) {
                 audio.play();
             }
         }
